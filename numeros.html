@@ -18,6 +18,28 @@ function mostraFrase(frase) {
 var vitorias= parseInt(prompt("Entre aqui com o numero de vitorias do seu time!"));
 var empates= parseInt(prompt("Entre aqui com o numero de empates de seu time!"));
 
-var pontos =( vitorias *3) + empates;
-mostraFrase ( "O numero de pontos é" +  pontos );
+var pontos =( vitorias * 3 ) + empates;
+mostraFrase ( "O numero de pontos é " +  pontos );
+
+if ( pontos > 28 ){
+
+	mostraFrase("Seu time está melhor que o ano passado!")
+
+}
+
+if ( pontos < 28 ){
+
+	
+	mostraFrase ("Seu time está pior que o ano passado!")
+}
+
+if (pontos == 28) {
+
+	
+	mostraFrase ("Seu time está igual ao ano passado!")
+}
+
+mostraFrase("FIM")
+
+
 </script>
